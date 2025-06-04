@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #003366;
+  background: #000428;
+  background: -webkit-linear-gradient(
+    to right,
+    #004e92,
+    #000428
+  );
+  background: linear-gradient(
+    to right,
+    #004e92,
+    #000428
+  );
+
+  font-weight: 600;
+}
+
+.container {
+  width: 50vw;
+  height: 40vw;
+  background-color: #0f0f0f;
+  border-radius: 2vw;
+  padding: 4vw 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+h1 {
+  font-size: 3vw;
+  color: #ffffff;
+  margin-bottom: 1vw;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex: 2;
+}
+
+.buttons button {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffdcdc;
+  cursor: pointer;
+  font-size: 5vw;
+  border: 3px solid #494949;
+  transition: 0.1s ease;
+}
+
+.buttons button:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05) translateY(-0.5vw);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.buttons button:active {
+  background-color: #d0d0d0;
+  transform: scale(0.95) translateY(0.5vw);
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  color: #fff;
+}
+
+.choices h2 {
+  margin: 0.5vw;
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+.choices h2 span {
+  color: #ff0084;
+}
+
+.score {
+  flex: 1;
+  margin-left: auto;
+  font-size: 2vw;
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+
+.score div {
+  margin: 0.3vw;
+}
+
+.result {
+  flex: 1;
+  text-align: center;
+  font-size: 2vw;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#result {
+  background-color: rgb(255, 204, 0);
+  padding: 0.5vw 1vw;
+  border-radius: 1vw;
+}

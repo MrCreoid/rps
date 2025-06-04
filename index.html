@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1><span style="color: rgb(216, 42, 255);">Play</span> Rock Paper Scissors</h1>
+      <div class="score">
+        <div class="player">Player: <span id="player-score">0</span></div>
+        <div class="computer">Computer: <span id="computer-score">0</span></div>
+      </div>
+      <div class="buttons">
+        <button class="rock" onclick="
+        playerMove = 'rock';
+        result(playerMove, computerPlay());
+        ">✊</button>
+        <button class="scissor" onclick="
+        playerMove = 'scissors';
+        result(playerMove, computerPlay());
+        ">✌️</button>
+        <button class="paper" onclick="
+        playerMove = 'paper';
+        result(playerMove, computerPlay());
+        ">✋</button>
+      </div>
+      <div class="choices">
+        <div class="player-choice">
+          <h2>
+            Player Choice:
+            <span id="player-choice">none</span>
+          </h2>
+        </div>
+        <div class="computer-choice">
+          <h2>
+            Computer Choice:
+            <span id="computer-choice">none</span>
+          </h2>
+        </div>
+      </div>
+      <div class="result">
+        <span id="result">none</span>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
